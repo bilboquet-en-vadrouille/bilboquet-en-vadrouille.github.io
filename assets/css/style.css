@@ -1,12 +1,19 @@
 @font-face {
     font-family: Museo;
-    src: url(https://jasonlambertmars.github.io/leboisdelagrenouille/assets/fonts/Museo-Slab.ttf);
+    src: url(https://www.bilboquet-en-vadrouille.fr/assets/fonts/Museo-Slab.ttf);
 }
 
 @font-face {
     font-family: MuseoTitre;        
-    src: url(https://jasonlambertmars.github.io/leboisdelagrenouille/assets/fonts/Museo-Titre.ttf);
+    src: url(https://www.bilboquet-en-vadrouille.fr/assets/fonts/Museo-Titre.ttf);
 }
+
+@font-face {
+    font-family: Baloo;        
+    src: url(https://www.bilboquet-en-vadrouille.fr/assets/fonts/Baloo2.ttf);
+}
+
+
 
 /* default */
 .d-center{
@@ -114,7 +121,7 @@
     font-size: 18px;
     font-weight: bold;
     outline: none;
-    font-family: 'MuseoTitre';
+    font-family: 'Baloo';
     
 }
 
@@ -134,7 +141,7 @@
 
 
 .navbar .navbar-nav .dropdown-item{
-    font-family: 'Museo';
+    font-family: 'Baloo';
 }
 
 @media (max-width: 991.98px) {
