@@ -144,7 +144,7 @@
     font-family: 'Baloo';
 }
 
-.navbar .navbar-nav .dropdown-item .nav-item{
+.navbar .navbar-nav .dropdown-menu .nav-item{
     padding-left: 10px !important;
 }
 
