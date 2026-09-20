@@ -6,7 +6,7 @@ title: Les jeux de bilboquet en vadrouille - animation et jeux en correze et lim
 <!-- Produits - Jeux -->
 <div class="container-fluid py-3">
   <div class="titre-page-interne">
-    <h1>Notre <span>ludothèque</span></h1>
+    <h1 class="text-center">Notre <span>ludothèque</span></h1>
     <p class="sous-titre-page-interne">Retrouvez ci-dessous tous les jeux diponibles !
       <br>Pour plus d'informations, vous pouvez envoyer un message <a href="/contact#me-contacter">en cliquant ici</a>
     </p>
@@ -19,7 +19,7 @@ title: Les jeux de bilboquet en vadrouille - animation et jeux en correze et lim
     {% continue %} <!-- Passe au post suivant sans rien afficher -->
   {% endif %}
       {% assign lightbox_id = "produit-" | append: forloop.index %}
-      <div class="col-12 col-md-8 offset-md-2 wow fadeIn" data-wow-delay="0.1s">
+      <div class="col-12 col-md-8 offset-md-2>
         <article class="flex-produit-container {% if forloop.last %}is-last{% endif %}">
           <div>
 
