@@ -852,6 +852,12 @@ h1 span{
   right: 25%;
 }
 
+@media all and (max-width:980px){
+    #accueil-envie div.p-absolute{
+        width:37%:
+    }
+}
+
 #accueil-envie div.p-absolute a{
   transform: skew(20deg);
   color: var(--primary);
