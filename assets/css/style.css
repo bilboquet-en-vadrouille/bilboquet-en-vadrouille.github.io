@@ -144,6 +144,10 @@
     font-family: 'Baloo';
 }
 
+.navbar .navbar-nav .dropdown-item .nav-item{
+    padding-left: 10px !important;
+}
+
 @media (max-width: 991.98px) {
     .navbar .navbar-nav .nav-link {
         margin-right: 0;
