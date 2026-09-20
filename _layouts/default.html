@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr" id="{{ page.url | remove: 'index.html' | remove: '.html' | remove: '.md' | remove: '/' }}">
+
+{% include head.html %}
+
+<body id="page-top">
+
+    <!-- Menu Start -->
+    {% include menu.html %}
+    <!-- Menu End -->
+
+
+    {{ content }}
+
+
+
+    <!-- Footer Start -->
+      {% include footer.html %}
+    <!-- Footer End -->
+
+
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+url: ""
+baseurl: ""
+
+# Site settings
+title: Le bois de la grenouille
+email: leboisdelagrenouille@laposte.net
+description: "Le site du bois de la grenouille"
+
+#build-settings
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  regles:
+    output: true
+
+prose:
+  rooturl: ''
+  siteurl: ""
+  ignore:
+    - 404.html
+    - lib
+    - _config.yml
+    - /_layouts
+    - /_includes
+    - /assets/fonts
+    - /assets/css
+    - /assets/js
+    - /assets/video
+    - a-propos.html
+    - galerie-photos.html
+    - index.html
+    - jeux.html
+    - mentions-legales.html
+    - objets-deco.html
+    - panneaux-sculptes.html
+    - projets-personnalises.html
+  media: 'assets/img/posts'
+  metadata:
+    _posts:
+      - name: "sur-titre"
+        field:
+          label: "Sur-titre du produit"
+          element: "text"
+          placeholder: "Apparait au-dessus du produit [facultatif]"
+      - name: "titre"
+        field:
+          label: "Nom du produit"
+          element: "text"
+          placeholder: "Nom du produit"
+      - name: "prix"
+        field:
+          label: "Prix"
+          element: "text"
+          placeholder: "Entrer le prix"
+      - name: "description"
+        field:
+          label: "Description du produit"
+          element: "textarea"
+          placeholder: "Entrer la descrition du produit"
+      - name: "categorie"
+        field:
+          label: "Catégorie"
+          element: "select"
+          options:
+            - jeux
+            - objets-deco
+            - grands-jeux
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "produit"

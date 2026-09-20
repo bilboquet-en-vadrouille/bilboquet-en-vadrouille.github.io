@@ -1,0 +1,29 @@
+<div class="text-center">
+    <a href="/"><img src="/assets/img/bandeau.png" alt="bandeau bilboquet en vadrouille" style="max-width: 100%;"></a>
+</div>
+<nav class="navbar mx-auto navbar-expand-lg bg-white navbar-light px-4 px-lg-5">
+    <button type="button" class="navbar-toggler me-0" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav mx-auto p-4 p-lg-0">
+            <a href="/" class="nav-item nav-link {% if page.url == '/' %}active{% endif %}">Accueil</a>
+            <a href="/ludotheque" class="nav-item nav-link {% if page.url == '/ludotheque' %}active{% endif %}">Nos jeux</a>
+            <div class="nav-item dropdown">
+                <a href="/animations" class="nav-item nav-link {% if page.url == '/animations' %}active{% endif %} dropdown-toggle" data-bs-toggle="dropdown">Animations & Projets</a>
+                <div class="dropdown-menu m-0">
+                    <a href="/animations" class="nav-item nav-link {% if page.url == '/animations' %}active{% endif %} p-0">- Animations</a>
+                    <a href="/projet-pedagogique-ludique" class="nav-item nav-link {% if page.url == '/projetpedagogiqueludique' %}active{% endif %} p-0">- Projet pedagogique</a>
+                </div>
+
+            </div>
+            <a href="/location" class="nav-item nav-link {% if page.url == '/location' %}active{% endif %}">Location</a>
+            <a href="/galeriephotos" class="nav-item nav-link {% if page.url == '/galeriephotos' %}active{% endif %}">Galerie photos</a>
+            <a href="/contact" class="nav-item nav-link {% if page.url == '/contact' %}active{% endif %}">Contact</a>
+        </div>
+    </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Navbar End -->

@@ -1,0 +1,1430 @@
+@font-face {
+    font-family: Museo;
+    src: url(https://jasonlambertmars.github.io/leboisdelagrenouille/assets/fonts/Museo-Slab.ttf);
+}
+
+@font-face {
+    font-family: MuseoTitre;        
+    src: url(https://jasonlambertmars.github.io/leboisdelagrenouille/assets/fonts/Museo-Titre.ttf);
+}
+
+/* default */
+.d-center{
+    justify-content: center;
+    align-items: center;
+}
+
+#barre-newsletter{
+    display: none !important;
+}
+
+/********** Template CSS **********/
+:root {
+    --primary: #FC1F00;
+    --secondary: #EDDD5E;
+    --light: #F7F7F7;
+    --dark: #404A3D;
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    right: 30px;
+    bottom: 30px;
+    z-index: 99;
+}
+
+.fw-bold {
+    font-weight: 700 !important;
+}
+
+.fw-medium {
+    font-weight: 600 !important;
+}
+
+.fw-semi-bold {
+    font-weight: 500 !important;
+}
+
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*** Button ***/
+.btn {
+    transition: .5s;
+    font-weight: 500;
+}
+
+.btn-primary,
+.btn-outline-primary:hover {
+    color: var(--light);
+}
+
+.btn-secondary,
+.btn-outline-secondary:hover {
+    color: var(--dark);
+}
+
+.btn-square {
+    width: 38px;
+    height: 38px;
+}
+
+.btn-sm-square {
+    width: 32px;
+    height: 32px;
+}
+
+.btn-lg-square {
+    width: 48px;
+    height: 48px;
+}
+
+.btn-square,
+.btn-sm-square,
+.btn-lg-square {
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: normal;
+}
+
+
+/*** Navbar ***/
+
+
+.navbar .navbar-nav .nav-link{
+    margin-right: 3.5rem;
+    padding: 25px 0;
+    color: rgb(48,48,48);
+    font-size: 18px;
+    font-weight: bold;
+    outline: none;
+    font-family: 'MuseoTitre';
+    
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+
+.navbar .navbar-nav .dropdown-item{
+    font-family: 'Museo';
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link {
+        margin-right: 0;
+        padding: 10px 0;
+    }
+
+    .navbar .navbar-nav {
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 90%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, .1);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: var(--primary);
+    border: 10px solid var(--primary);
+}
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 450px;
+    }
+
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.page-header {
+    background: url(../img/banner.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: var(--light);
+}
+
+.page-header .breadcrumb-item,
+.page-header .breadcrumb-item a {
+    font-size: 18px;
+    color: var(--light);
+}
+
+
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 6px;
+    left: -40px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 2px;
+    left: -60px;
+    background: var(--primary);
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+#homepage #section-cat-accueil .section-title::before,
+#homepage #section-cat-accueil .section-title::after,
+#homepage #me-contacter .section-title::before,
+#homepage #me-contacter .section-title::after{
+    background: linear-gradient(90deg,rgba(91, 140, 81, 1) 0%, rgba(91, 140, 81, 1) 25%, rgba(247, 247, 247, 1) 5%, rgba(247, 247, 247, 1) 0%, rgba(247, 247, 247, 1) 75%, rgba(91, 140, 81, 1) 75%, rgba(91, 140, 81, 1) 100%) !important;
+}
+
+
+/*** About ***/
+.about-experience {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: -45px;
+    bottom: -45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*** Service ***/
+.service-item {
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.service-item .service-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.service-item .service-img img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.service-item .service-img::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.service-item .service-img::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #FFFFFF;
+    transition: .5s ease-out;
+    z-index: 2;
+}
+
+.service-item:hover .service-img::after {
+    width: 0;
+    left: auto;
+    right: 0;
+}
+
+.service-item .service-text .service-icon {
+    width: 140px;
+    height: 140px;
+    padding: 15px;
+    margin-top: -70px;
+    margin-bottom: 40px;
+    background: #FFFFFF;
+    border-radius: 140px;
+    overflow: hidden;
+    box-shadow: 0 0 60px rgba(0, 0, 0, .1);
+}
+
+.service-item .service-text h5,
+.service-item .service-text p {
+    transition: .5s;
+}
+
+.service-item:hover .service-text h5,
+.service-item:hover .service-text p {
+    color: #FFFFFF;
+}
+
+.service-item .service-text .btn {
+    color: var(--secondary);
+    background: #FFFFFF;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .25);
+}
+
+.service-item .service-text .btn:hover {
+    color: var(--dark);
+    background: var(--secondary);
+}
+
+
+/*** Product ***/
+.product-item {
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.product-item .product-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, .5);
+    opacity: 0;
+    padding-top: 60px;
+    transition: .5s;
+}
+
+.product-item:hover .product-overlay {
+    opacity: 1;
+    padding-top: 0;
+}
+
+
+/*** Team ***/
+.team-item {
+    position: relative;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
+}
+
+.team-item .btn {
+    border-color: transparent;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+}
+
+
+/*** Testimonial ***/
+.testimonial-img {
+    position: relative;
+    min-height: 400px;
+}
+
+.testimonial-img::after {
+    position: absolute;
+    content: "\f10d";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 200px;
+    color: #EEEEEE;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.testimonial-img img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.testimonial-img img:nth-child(1) {
+    top: 0;
+    left: 0;
+}
+
+.testimonial-img img:nth-child(2) {
+    top: 60%;
+    left: 20%;
+}
+
+.testimonial-img img:nth-child(3) {
+    top: 20%;
+    left: 60%;
+}
+
+.testimonial-img img:nth-child(4) {
+    bottom: 0;
+    right: 0;
+}
+
+.testimonial-img img .animated.pulse {
+    animation-duration: 2s;
+}
+
+.testimonial-carousel .owl-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    border-radius: 45px;
+    box-shadow: 0 0 45px rgba(0, 0, 0, .2);
+    font-size: 22px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    background: var(--secondary);
+    color: var(--dark);
+}
+
+
+/*** Footer ***/
+.footer {
+    color: #B0B9AE;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #B0B9AE;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: var(--light);
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+
+
+/* Perso */
+
+.slim-menu {
+    height: 50px; /* Ajustez la hauteur souhaitée pour le menu "slim" */
+    transition: height 0.3s ease; /* Animation de transition fluide */
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+p {
+    font-family: "Museo";
+    color: #404A3D;
+}
+
+p.h1,
+h1,
+h2,
+h3,
+.h1,
+.h2,
+.h3,
+.section-title {
+    font-family: "MuseoTitre", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/*
+h1:not(.titre-accueil),
+.section-title {
+    color: #404A3D !important;
+}*/
+
+h2,
+.h2 {
+    font-size: 2.5rem;
+    color: #3C1D17 !important;
+}
+
+h3,
+.h3 {
+    font-size: 1.25rem;
+    color: #3C1D17 !important;
+}
+
+.navbar {
+    padding-top: 1rem;
+}
+
+.shadow-sm {
+    box-shadow: none !important;
+}
+
+.info-bulle{
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    border-radius: 10px;
+    padding: 0 10px;
+    margin: 1rem;
+    margin-left: 0;
+    position: relative;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.info-bulle.bg-primary {
+    background-color: #5B8C51 !important;
+    color: #EDDD5E;
+}
+
+.info-bulle.bg-secondary {
+    color: #5B8C51;
+    background-color: #EDDD5E;
+}
+
+
+/* menu */
+
+
+.subitem{
+    padding-left: 10%;
+}
+
+.not-clickable{
+    pointer-events: none;
+}
+
+
+/*****
+* IMAGE
+******/
+
+.grid-masonry img{
+    padding: 10px 0px;
+}
+
+
+#hover-text {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6); /* Fond semi-transparent */
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none; /* Cache le texte par défaut */
+    pointer-events: none; /* Évite les interactions avec le texte */
+    white-space: nowrap; /* Empêche le texte de se casser en plusieurs lignes */
+    z-index: 1000; /* Assure que le texte est au-dessus de l'image */
+}
+
+
+
+/* a propos */
+
+#qui-suis-je h3{
+    margin-bottom: 20px;
+
+}
+
+#qui-suis-je img{
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+#les-temoignages figure{
+    padding: 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    background-color: white;
+}
+
+#les-temoignages .blockquote{
+    font-size: 1rem;
+}
+
+#les-temoignages .blockquote-footer{
+    font-style: italic;
+    font-size: 1.3rem;
+}
+
+#portfolio .portfolio-link{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    background: repeating-linear-gradient(
+  -45deg,
+  rgb(244, 244, 244),
+  rgb(244, 244, 244) 10px,
+  white 10px,
+  white 20px
+);
+}
+
+/****
+* Image lightbox
+****/
+
+#page-ateliers-hebdo a,
+#page-stage-plante-bio-indicatrice a,
+a.portfolio-link{
+    overflow: hidden;
+}
+
+#page-ateliers-hebdo img,
+#page-stage-plante-bio-indicatrice img,
+.portfolio-link img{
+    transition: all .2s ease;
+}
+
+#page-ateliers-hebdo img:hover,
+#page-stage-plante-bio-indicatrice img:hover,
+.portfolio-link img:hover{
+    transform: scale(1.02);
+    transition: all .4s ease;
+}
+
+/* lightbox Photo popup */
+.lb-details{
+    text-align: center !important;
+}
+
+.lb-details .lb-caption{
+    font-size: 16px;
+}
+
+.lb-details .lb-number{
+    display: none !important;
+}
+
+/* formulaire */
+
+.form-select > option:first-child{
+    display: none;
+}
+
+#form-sujet select{
+    padding-top: 7px;
+}
+
+.dropdown-menu{
+    padding-bottom: 0;
+}
+
+
+/***** 
+Bois de la grenouille
+*****/
+
+span.red{
+    color: var(--primary);
+}
+
+#logo-le-bois-de-la-grenouille{
+    max-height: 100px;
+}
+
+/**** titre general bandeau ***/
+.titre-page-interne{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.titre-page-interne span,
+h1 span{
+    color: #FC1F00 !important;
+}
+
+.titre-page-interne h1{
+    color: #3C1D17 !important;
+    font-size: 2.5rem;
+}
+
+.titre-page-interne .sous-titre-page-interne{
+    text-align: center;
+    font-size: 1.25rem;
+}
+
+#grands-jeux-en-bois{
+    background-color: #F2F2F2;
+    padding: 20px 0;
+}
+
+
+#bilboquet-en-vadrouille{
+ text-align: center;
+ max-width:1000px;
+ margin-left: auto;
+ margin-right: auto;
+ background-color: #F2F2F2;
+ margin-top: 3rem;
+ padding-top: 2.5rem;
+}
+
+#bilboquet-en-vadrouille img{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+@media all and (max-width: 1200px){
+    #grands-jeux-en-bois{
+    padding: 20px 40px;
+}
+    #bilboquet-en-vadrouille{
+ padding-left: 20px;
+ padding-right: 20px;
+}
+}
+
+/*** accueil **/
+
+#section-reseau-accueil{
+
+}
+
+#section-reseau-accueil img{
+    max-width: 60px;
+    margin: 6px 1rem;
+}
+
+#accueil-envie{
+    position: relative;
+}
+
+#accueil-envie img{
+}
+
+#accueil-envie div.p-absolute{
+  position: absolute;
+  background-color: white;
+  z-index: 999;
+  height: 90%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transform: skew(-20deg);
+  right: 25%;
+}
+
+#accueil-envie div.p-absolute a{
+  transform: skew(20deg);
+  color: var(--primary);
+  margin: 30px 0;
+  font-size: 1.75rem;
+  font-family: "MuseoTitre";
+}
+
+#accueil-envie div.p-absolute a:hover{
+  text-decoration: underline;
+}
+
+#accueil-envie div.p-absolute hr{
+  width: 50%;
+  height: 10px;
+  background-color: lightgray;
+}
+
+.scrolling-images {
+    gap: 20px;
+    animation: scroll 90s linear infinite alternate;
+}
+
+.scrolling-images img {          /* garde le ratio */
+    height: 400px;        /* grande taille */
+    flex: 0 0 calc(100% / 7); /* 3 images visibles */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-235%));
+    }
+}
+
+
+
+/* page produit */
+
+#creations-ludiques h1,
+#creations-decoratives h1{
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.colonne_produit > .row > div{
+    padding: .5rem 5rem;
+}
+
+.colonne_produit img{
+    margin-bottom: 1rem;
+    max-width: 100%;
+}
+
+.colonne_produit .produit-type{
+    font-size: 1.2rem;
+    margin-bottom: .2rem;
+}
+
+.colonne_produit .titre_produit{
+    display: flex;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.colonne_produit .titre_produit h2{
+    font-size: 1.6rem;
+    font-family: 'MuseoTitre';
+    font-weight: bold;
+}
+
+.colonne_produit .titre_produit span{
+    color: #FC1F00;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'MuseoTitre';
+    padding-left: 1rem;
+}
+.colonne_produit .produit-content{
+    font-size: .95rem;
+}
+
+/* A propos */
+#texte-qui-suis-je{
+    display: flex;
+    align-items: center;
+}
+
+/* Panneux sculptés */
+
+#galerie-panneaux-sculptes{
+    column-count: 3 !important;
+}
+
+/* Projet perso */
+
+#texte-projet-perso h1{
+    margin-bottom: 1.75rem;
+}
+
+#texte-projet-perso h1 span{
+    color: #FC1F00 !important;
+}
+
+#texte-projet-perso h2{
+    font-size: 1.75rem;
+    text-align: center;
+    color: #404A3D !important;
+}
+
+
+/* gallerie photo */
+
+.gallery-grid {
+  column-count: 3;          /* nombre de colonnes, adapte selon ton design */
+  column-gap: 6px;          /* espace entre les colonnes */
+}
+
+.gallery-grid a {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 6px;
+  break-inside: avoid;      /* évite que l’image se coupe entre colonnes */
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid a:hover img {
+  transform: scale(1.05);
+}
+
+.gallery-grid a:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: auto;             /* conserve le ratio naturel */
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .gallery-grid {
+    column-count: 3;
+  }
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    column-count: 1;
+  }
+}
+
+
+
+/***** Bilboquet *****/
+
+/* accueil */
+
+#accueil-presentation h1{
+    margin-bottom: 3rem;
+}
+
+#accueil-presentation > div > p{
+    font-size: 1.5rem;
+    font-family: 'Museo';
+    text-align: center;
+    letter-spacing: 0.1rem;
+    margin-bottom: 4rem;
+}
+
+#accueil-presentation > div > div{
+    font-size: 1.05rem;
+    font-family: 'Museo';
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+
+#accueil-presentation > div > div .text-right{
+    text-align: right;
+}
+
+/* page ludotheque */
+
+#ludotheque .colonne_produit h2{
+    color: #FC1F00 !important;
+    font-size: 2rem;
+}
+
+#ludotheque .colonne_produit article{
+    position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.flex-produit-container > div{
+    flex: 0 0 50%;      /* Ne grandit pas, ne rétrécit pas, base fixe à 50% */
+  width: 50%;         /* Force la largeur même si le contenu est plus petit */
+  max-width: 50%;     /* Sécurité anti-débordement */
+  box-sizing: border-box;
+  
+  padding-right: 10px;
+}
+
+@media all and (max-width:1200px){
+    #ludotheque .colonne_produit article{
+        flex-direction: column;
+    }
+    .flex-produit-container > div{
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+
+/* On crée la ligne grise de 5px sous CHAQUE article */
+.flex-produit-container::after {
+  content: "♦"; /* Vous pouvez remplacer par un point "•" ou une étoile "★" */
+  color: #94a3b8;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: -6px; /* Ajusté pour centrer le symbole sur la ligne */
+  left: 15%;
+  width: 70%;
+  height: 5px;
+  background: linear-gradient(to right, transparent, #cbd5e1 20%, #cbd5e1 80%, transparent);
+  border-radius: 5px;
+}
+
+
+/* SÉCURITÉ : On retire la ligne et les espaces sur le tout dernier article */
+.flex-produit-container.is-last {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.flex-produit-container.is-last::after {
+  display: none !important; /* Supprime complètement la ligne */
+}
+
+/* Comportement de l'image pour respecter la Flexbox */
+#ludotheque .img-produit-adaptative {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-height: 400px;    /* Empêche l'image d'être trop haute si elle est verticale */
+  object-fit: contain;  /* Garde les proportions de l'image sans la déformer */
+}
+
+#ludotheque .bloc-moitie-texte {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 25px; /* Espace au centre entre l'image et le texte */
+}
+
+.en-savoir-plus{
+    margin-top: 2rem;
+}
+
+.en-savoir-plus a{
+    color:#687393;
+    text-decoration: underline;
+    font-size: 1.1rem;
+    font-family: 'MuseoTitre';
+}
+
+#etoile{
+    font-size: 1.3rem;
+    color: rgb(60,29,23);
+}
+
+#prixlocation{
+    font-family: "Museo";
+    color: #2F2E2E;
+}
+
+/* tableau tarif */
+
+#ludotheque table{
+    margin-top: 4rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#ludotheque table td{
+    width: 20%;
+    vertical-align: top;
+    padding: 15px; /* Ajoute un peu d'espace interne pour respirer */
+    font-size: 1.05rem;
+}
+
+#ludotheque table tr{
+    text-align: center;
+}
+
+/* Centrer spécifiquement la ligne des étoiles et des prix */
+#tableau-tarifs tr:first-child td,
+#tableau-tarifs tr:last-child td {
+  text-align: center;
+  font-weight: bold;
+}
+
+#tableau-tarifs .stars{
+    font-size: 1.75rem;
+    color: #3c1d17;
+}
+
+/* 2. Appliquer un fond gris de plus en plus foncé colonne par colonne */
+#tableau-tarifs td:nth-child(1) { background-color: rgb(239,239,239); } /* Gris très clair (★) */
+#tableau-tarifs td:nth-child(2) { background-color: rgb(250,250,250); } /* (★★) */
+#tableau-tarifs td:nth-child(3) { background-color: rgb(190,190,190); } /* (★★★) */
+#tableau-tarifs td:nth-child(4) { background-color: rgb(250,250,250); } /* (★★★★) */
+#tableau-tarifs td:nth-child(5) { background-color: rgb(146,146,146); } /* Grenouille */
+
+#ludotheque #nouveaute p{
+    font-size: 2.2rem;
+    color: #DB7500;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* page animations */
+
+#animations h1{
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+#animations .col-lg-6{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#animations .d-center p{
+    max-width: 60%;
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 1rem;
+}
+
+#animations h2{
+    margin-bottom: 3rem;
+    font-size: 2.5rem;
+}
+
+#animations #nos-tarifs img{
+ border-radius: 100%;
+ max-width: 15rem;
+ margin-bottom: 3rem;
+}
+
+#animations #nos-tarifs h3{
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
+}
+
+#animations #nos-tarifs span p{
+    margin-bottom: .2rem;
+    font-size: 1.25rem;
+}
+#animations #nos-tarifs span small{
+    text-align: center;
+    display: block;
+}
+
+#animations #nos-tarifs span{
+    margin-bottom: 3rem;
+}
+
+#animations #nos-tarifs .col-md-4 > p{
+    border: 1px solid gray;
+    padding: 1rem;
+}
+
+/* page projet-pedagogique-ludique */
+
+#projet-pedagogique-ludique h1{
+    color: #FC1F00 !important;
+    font-size: 2.5rem;
+}
+
+#projet-pedagogique-ludique p{
+    font-family: "Museo";
+    font-size: 1.3rem;
+}
+
+
+
+/* page location */
+
+#location h1{
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+}
+
+#location .col-md-6{
+    text-align: center;
+}
+
+#location .col-md-6 > p:first-child{
+    font-size: 1.625rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#location .col-md-6 > p{
+    font-size: 1.43rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+#location .col-md-6 img{
+    margin-bottom: 4rem;
+}
+
+#location .col-md-6 > span{
+    font-size: 1.65rem;
+    font-family: "Museo";
+    text-align: center;
+    display: block;
+}
+
+#location .col-md-6 > div{
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+#location .col-md-6 div#regle-exemple img{
+    max-width: 75px;
+    padding-top: 1rem;
+}
+
+#location .col-md-6 > a{
+    font-size: 1.8rem;
+    text-align: center;
+    color: #222;
+    text-decoration: underline;
+    display: block;
+    margin-bottom: 2.6rem;
+}
+
+
+#location .col-md-6 > table{
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-align: left;
+    display: flex;
+    color: #000000a0;
+    justify-content: center;
+}
+
+#location .col-md-6 > table td:first-child{
+    padding-right: 2rem;
+}
+
+#location .col-md-6 > table td span{
+    font-size: 80%;
+}
+
+#location #caution{
+    margin-top: 4rem;
+}
+
+#location #caution p:first-child{
+    font-size: 1.65rem;
+    margin-bottom: 3rem;
+}
+
+#location #caution p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+#location #caution p a{
+    color: #222;
+    text-decoration: underline;
+}
+
+/* galerie photo */
+
+#galeriephotos .titre-page-interne{
+    margin-top: .5rem;
+}
+
+/* Contact */
+
+#contact h1{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+}
+
+#contact #reseaux-sociaux{
+    text-align: center;
+}
+
+#contact #reseaux-sociaux p{
+    font-size: 1.6rem;
+}
+
+#contact #reseaux-sociaux span a:first-child{
+    font-size: 2.5rem;
+    color: #1877F2;
+    margin-right: 1rem;
+    transition: all .5s ease;
+}
+
+#contact #reseaux-sociaux span a{
+    font-size: 2.5rem;
+    color: #E1306C;
+    margin-left: 1rem;
+    transition: all .5s ease;
+}
+
+#contact #reseaux-sociaux span a:hover{
+    position: relative;
+    top: -2px;
+    transition: all .5s ease;
+}
+
+/* Footer */
+
+
+#bandeau-footer {
+  display: flex;
+  align-items: center; /* Aligne verticalement la ligne et le texte */
+  text-align: center;
+  width: 100%;        /* Prend toute la largeur disponible */
+  background-color: rgb(48,48,48);
+  padding: 2rem;
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+#bandeau-footer::before,
+#bandeau-footer::after {
+  content: "";
+  flex: 1;            /* Permet à la ligne de prendre tout l'espace vide */
+  border-bottom: 7px solid #bfbebe; /* Style, épaisseur et couleur de la ligne */
+  position: relative;
+  top: 15px;
+}
+
+#bandeau-footer .bandeau-texte {
+  padding: 0 60px;    /* Espace entre le texte et les lignes de chaque côté */
+  font-size: 1.5rem;
+}
+
+#bandeau-footer div img{
+    width: 50px;
+    display: inline-block;
+}
+
+#bandeau-footer .bandeau-texte p{
+    font-family: "MuseoTitre" !important;
+}
+
+#copyright a{
+    font-size: 1.25rem;
+    font-family: "Museo";
+    color: #404A3D;
+}
+
+#footer-items{
+
+}
