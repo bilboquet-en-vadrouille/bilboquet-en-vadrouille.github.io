@@ -1084,7 +1084,6 @@ h1 span{
   width: 50%;         /* Force la largeur même si le contenu est plus petit */
   max-width: 50%;     /* Sécurité anti-débordement */
   box-sizing: border-box;
-  
   padding-right: 10px;
 }
 
@@ -1095,7 +1094,9 @@ h1 span{
     .flex-produit-container > div{
         max-width: 100%;
         width: 100%;
+        margin-bottom: 2.5rem;
     }
+    
 }
 
 
