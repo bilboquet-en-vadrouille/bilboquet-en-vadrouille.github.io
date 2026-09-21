@@ -13,7 +13,14 @@
     src: url(https://www.bilboquet-en-vadrouille.fr/assets/fonts/Baloo2.woff2);
 }
 
-
+html, body {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    /* Supprime définitivement la marge blanche et le bug de défilement à droite */
+    overflow-x: clip !important; 
+}
 
 /* default */
 .d-center{
