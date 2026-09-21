@@ -2,7 +2,7 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Page d'accueil du bois de la grenouille" name="description">
+     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
     <!-- Favicon -->
     <link href="assets/img/favicon.png" rel="icon">

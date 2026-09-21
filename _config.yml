@@ -4,7 +4,7 @@ baseurl: ""
 # Site settings
 title: Le bois de la grenouille
 email: leboisdelagrenouille@laposte.net
-description: "Le site du bois de la grenouille"
+description: "Bilboquet en vadrouille est une ludothèque itinérante de grands jeux en bois, qui propose des animations ludiques et la location de grands jeux en bois et de jeux traditionnels."
 
 #build-settings
 plugins:
