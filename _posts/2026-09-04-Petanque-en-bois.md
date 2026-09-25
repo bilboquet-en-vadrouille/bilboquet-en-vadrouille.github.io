@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Petanque en bois
+title: Pétanque en bois
 description: |
   Chaque joueur lance une boule pour se rapprocher le plus possible du cochonnet. Le plus loin continue de jouer pour reprendre le point !
   
