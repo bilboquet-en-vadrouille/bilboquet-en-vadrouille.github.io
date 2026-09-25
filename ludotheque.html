@@ -75,11 +75,11 @@ title: Les jeux de bilboquet en vadrouille - animation et jeux en correze et lim
         </tr>
 
         <tr> 
-          {% assign jeux_1 = site.posts | where: "etoile", "★" %}
-           {% assign jeux_2 = site.posts | where: "etoile", "★★" %}
-           {% assign jeux_3 = site.posts | where: "etoile", "★★★" %}
-           {% assign jeux_4 = site.posts | where: "etoile", "★★★★" %}
-           {% assign jeux_5 = site.posts | where: "etoile", "★★★★★" %}
+          {% assign jeux_1 = site.posts | where: "etoile", "★" | sort: "title" %}
+          {% assign jeux_2 = site.posts | where: "etoile", "★★" | sort: "title" %}
+          {% assign jeux_3 = site.posts | where: "etoile", "★★★" | sort: "title" %}
+          {% assign jeux_4 = site.posts | where: "etoile", "★★★★" | sort: "title" %}
+          {% assign jeux_5 = site.posts | where: "etoile", "★★★★★" | sort: "title" %}
            <td>
             <p> {% for jeu in jeux_1 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
           </td>
