@@ -12,5 +12,5 @@ lienplaquette: /regles/paletpetanque
 
 categorie: jeux
 ---
-![Palet_petanque.png](assets/img/posts/Palet_petanque.png)
+![Palet_petanque.jpg](assets/img/posts/Palet_petanque.jpg)
 

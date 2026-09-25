@@ -12,5 +12,5 @@ lienplaquette: /regles/petanque-en-bois
 
 categorie: jeux
 ---
-![Petanque_en_bois.png](assets/img/posts/Petanque_en_bois.png)
+![Petanque_en_bois.jpg](assets/img/posts/Petanque_en_bois.jpg)
 

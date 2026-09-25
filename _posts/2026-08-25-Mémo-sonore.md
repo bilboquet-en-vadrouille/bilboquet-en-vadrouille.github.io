@@ -12,5 +12,5 @@ lienplaquette: /regles/memo-sonore
 
 categorie: jeux
 ---
-![Memo_sonore.png](assets/img/posts/Memo_sonore.png)
+![Memo_sonore.jpg](assets/img/posts/Memo_sonore.jpg)
 

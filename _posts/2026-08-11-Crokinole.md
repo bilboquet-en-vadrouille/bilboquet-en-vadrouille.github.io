@@ -16,5 +16,5 @@ lienplaquette: /regles/crokinole
 
 categorie: jeux
 ---
-![Crokinole.png](assets/img/posts/Crokinole.png)
+![Crokinole.jpg](assets/img/posts/Crokinole.jpg)
 

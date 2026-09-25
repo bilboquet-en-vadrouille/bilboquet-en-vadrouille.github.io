@@ -12,5 +12,5 @@ lienplaquette: /regles/dis-moi-tout
 
 categorie: jeux
 ---
-![Dis-moi_tout.png](assets/img/posts/Dis-moi_tout.png)
+![Dis-moi_tout.jpg](assets/img/posts/Dis-moi_tout.jpg)
 

@@ -20,5 +20,5 @@ lienplaquette: /regles/tri-sabots
 
 categorie: jeux
 ---
-![Tri_sabots.png](assets/img/posts/Tri_sabots.png)
+![Tri_sabots.jpg](assets/img/posts/Tri_sabots.jpg)
 

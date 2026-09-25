@@ -14,5 +14,5 @@ lienplaquette: /regles/billard-japonais
 
 categorie: jeux
 ---
-![Billard_japonais.png](assets/img/posts/Billard_japonais.png)
+![Billard_japonais.jpg](assets/img/posts/Billard_japonais.jpg)
 

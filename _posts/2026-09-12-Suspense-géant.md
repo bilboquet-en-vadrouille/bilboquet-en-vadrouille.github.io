@@ -14,5 +14,5 @@ lienplaquette: /regles/suspense-geant
 
 categorie: jeux
 ---
-![Suspense_geant.png](assets/img/posts/Suspense_geant.png)
+![Suspense_geant.jpg](assets/img/posts/Suspense_geant.jpg)
 

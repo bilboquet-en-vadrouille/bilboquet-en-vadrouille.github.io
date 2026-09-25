@@ -12,5 +12,5 @@ lienplaquette: /regles/passe-trappe
 
 categorie: jeux
 ---
-![Passe-trappe.png](assets/img/posts/Passe-trappe.png)
+![Passe-trappe.jpg](assets/img/posts/Passe-trappe.jpg)
 

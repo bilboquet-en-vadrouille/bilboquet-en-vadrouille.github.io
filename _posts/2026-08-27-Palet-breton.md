@@ -12,5 +12,5 @@ lienplaquette: /regles/palet-breton
 
 categorie: jeux
 ---
-![Palet_breton.png](assets/img/posts/Palet_breton.png)
+![Palet_breton.jpg](assets/img/posts/Palet_breton.jpg)
 

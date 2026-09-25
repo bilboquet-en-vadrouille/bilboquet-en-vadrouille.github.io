@@ -12,5 +12,5 @@ lienplaquette: /regles/quilles-en-bois
 
 categorie: jeux
 ---
-![Quilles_en_bois.png](assets/img/posts/Quilles_en_bois.png)
+![Quilles_en_bois.jpg](assets/img/posts/Quilles_en_bois.jpg)
 

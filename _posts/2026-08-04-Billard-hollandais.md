@@ -16,5 +16,5 @@ lienplaquette: /regles/billard-hollandais
 
 categorie: jeux
 ---
-![Billard_hollandais.png](assets/img/posts/Billard_hollandais.png)
+![Billard_hollandais.jpg](assets/img/posts/Billard_hollandais.jpg)
 

@@ -14,5 +14,5 @@ lienplaquette: /regles/black-hole
 
 categorie: jeux
 ---
-![Black_hole.png](assets/img/posts/Black_hole.png)
+![Black_hole.jpg](assets/img/posts/Black_hole.jpg)
 

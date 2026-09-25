@@ -12,5 +12,5 @@ lienplaquette: /regles/tourdefroebel
 
 categorie: jeux
 ---
-![Tour_de_Froebel.png](assets/img/posts/Tour_de_Froebel.png)
+![Tour_de_Froebel.jpg](assets/img/posts/Tour_de_Froebel.jpg)
 

@@ -16,5 +16,5 @@ lienplaquette: /regles/jenga-geant
 
 categorie: jeux
 ---
-![Jenga_geant.png](assets/img/posts/Jenga_geant.png)
+![Jenga_geant.jpg](assets/img/posts/Jenga_geant.jpg)
 

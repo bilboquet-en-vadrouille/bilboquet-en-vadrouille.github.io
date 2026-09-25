@@ -12,5 +12,5 @@ lienplaquette: /regles/coop-bille
 
 categorie: jeux
 ---
-![Coop_bille.png](assets/img/posts/Coop_bille.png)
+![Coop_bille.jpg](assets/img/posts/Coop_bille.jpg)
 

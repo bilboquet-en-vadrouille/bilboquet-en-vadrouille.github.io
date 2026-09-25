@@ -10,5 +10,5 @@ lienplaquette: /regles/panneausensoriellion
 
 categorie: jeux
 ---
-![Panneau_sensoriel_Lion.png](assets/img/posts/Panneau_sensoriel_Lion.png)
+![Panneau_sensoriel_Lion.jpg](assets/img/posts/Panneau_sensoriel_Lion.jpg)
 

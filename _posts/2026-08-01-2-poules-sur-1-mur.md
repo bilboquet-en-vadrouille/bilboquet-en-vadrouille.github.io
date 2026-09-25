@@ -12,5 +12,5 @@ lienplaquette: /regles/2poulessur1mur
 
 categorie: jeux
 ---
-![2_poules_sur_1_mur.png](assets/img/posts/2_poules_sur_1_mur.png)
+![2_poules_sur_1_mur.jpg](assets/img/posts/2_poules_sur_1_mur.jpg)
 

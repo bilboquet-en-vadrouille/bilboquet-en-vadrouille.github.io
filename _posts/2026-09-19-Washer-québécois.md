@@ -20,5 +20,5 @@ lienplaquette: /regles/washer-quebecois
 
 categorie: jeux
 ---
-![Washer_quebecois.png](assets/img/posts/Washer_quebecois.png)
+![Washer_quebecois.jpg](assets/img/posts/Washer_quebecois.jpg)
 

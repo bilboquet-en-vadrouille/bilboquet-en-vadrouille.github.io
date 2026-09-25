@@ -14,5 +14,5 @@ lienplaquette: /regles/ludotheque/shapluk
 
 categorie: jeux
 ---
-![Shap_Luk_XL.png](assets/img/posts/Shap_Luk_XL.png)
+![Shap_Luk_XL.jpg](assets/img/posts/Shap_Luk_XL.jpg)
 

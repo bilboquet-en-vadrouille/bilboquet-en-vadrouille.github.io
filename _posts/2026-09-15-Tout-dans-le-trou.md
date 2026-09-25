@@ -14,5 +14,5 @@ lienplaquette: /regles/tout-dans-le-trou
 
 categorie: jeux
 ---
-![Tout_dans_le_trou.png](assets/img/posts/Tout_dans_le_trou.png)
+![Tout_dans_le_trou.jpg](assets/img/posts/Tout_dans_le_trou.jpg)
 

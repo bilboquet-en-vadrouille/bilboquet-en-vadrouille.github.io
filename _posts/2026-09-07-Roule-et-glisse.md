@@ -14,5 +14,5 @@ lienplaquette: /regles/roule-et-glisse
 
 categorie: jeux
 ---
-![Roule_et_glisse.png](assets/img/posts/Roule_et_glisse.png)
+![Roule_et_glisse.jpg](assets/img/posts/Roule_et_glisse.jpg)
 

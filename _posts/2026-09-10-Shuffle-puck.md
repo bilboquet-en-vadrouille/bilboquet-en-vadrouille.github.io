@@ -10,5 +10,5 @@ lienplaquette: /regles/shuffle-puck
 
 categorie: jeux
 ---
-![Shuffle_puck.png](assets/img/posts/Shuffle_puck.png)
+![Shuffle_puck.jpg](assets/img/posts/Shuffle_puck.jpg)
 

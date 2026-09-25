@@ -10,5 +10,5 @@ lienplaquette: /regles/objectif-lune
 
 categorie: jeux
 ---
-![Objectif_Lune.png](assets/img/posts/Objectif_Lune.png)
+![Objectif_Lune.jpg](assets/img/posts/Objectif_Lune.jpg)
 

@@ -14,5 +14,5 @@ lienplaquette: /regles/tumblin-dice
 
 categorie: jeux
 ---
-![Tumblin-dice.png](assets/img/posts/Tumblin-dice.png)
+![Tumblin-dice.jpg](assets/img/posts/Tumblin-dice.jpg)
 

@@ -12,5 +12,5 @@ lienplaquette: /regles/rigoulotte
 
 categorie: jeux
 ---
-![Rigoulotte.png](assets/img/posts/Rigoulotte.png)
+![Rigoulotte.jpg](assets/img/posts/Rigoulotte.jpg)
 

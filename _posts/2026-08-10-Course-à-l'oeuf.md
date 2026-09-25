@@ -14,5 +14,5 @@ lienplaquette: /regles/course%C3%A0loeuf
 
 categorie: jeux
 ---
-![Course_a_l'oeuf.png](assets/img/posts/Course_a_l'oeuf.png)
+![Course_a_l'oeuf.jpg](assets/img/posts/Course_a_l'oeuf.jpg)
 

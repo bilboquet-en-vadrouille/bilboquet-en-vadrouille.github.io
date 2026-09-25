@@ -12,5 +12,5 @@ lienplaquette: /regles/palet-vendeen
 
 categorie: jeux
 ---
-![Palet_vendeen.png](assets/img/posts/Palet_vendeen.png)
+![Palet_vendeen.jpg](assets/img/posts/Palet_vendeen.jpg)
 

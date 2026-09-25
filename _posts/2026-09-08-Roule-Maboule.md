@@ -10,5 +10,5 @@ lienplaquette: /regles/roulemaboule
 
 categorie: jeux
 ---
-![Roule_Maboule.png](assets/img/posts/Roule_Maboule.png)
+![Roule_Maboule.jpg](assets/img/posts/Roule_Maboule.jpg)
 

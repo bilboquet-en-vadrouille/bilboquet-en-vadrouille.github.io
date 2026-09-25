@@ -12,5 +12,5 @@ lienplaquette: /regles/gare-au-loup
 
 categorie: jeux
 ---
-![Gare_au_loup.png](assets/img/posts/Gare_au_loup.png)
+![Gare_au_loup.jpg](assets/img/posts/Gare_au_loup.jpg)
 

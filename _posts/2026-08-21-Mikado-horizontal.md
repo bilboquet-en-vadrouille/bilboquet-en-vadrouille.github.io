@@ -12,5 +12,5 @@ lienplaquette: /regles/mikado-horizontal
 
 categorie: jeux
 ---
-![Mikado_horizontal.png](assets/img/posts/Mikado_horizontal.png)
+![Mikado_horizontal.jpg](assets/img/posts/Mikado_horizontal.jpg)
 
