@@ -10,7 +10,7 @@ description: |
 
 etoile: ★
 prixlocation: "Prix location : 5€/j" 
-lienplaquette: /regles/course%C3%A0loeuf
+lienplaquette: /regles/coursealoeuf
 
 categorie: jeux
 ---

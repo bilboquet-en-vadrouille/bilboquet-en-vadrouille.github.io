@@ -10,7 +10,7 @@ description: |
 
 etoile: ★★
 prixlocation: "Prix location : 10€/j" 
-lienplaquette: /regles/ludotheque/shapluk
+lienplaquette: /regles/shapluk
 
 categorie: jeux
 ---
