@@ -73,6 +73,31 @@ title: Les jeux de bilboquet en vadrouille - animation et jeux en correze et lim
           <td class="stars">★★★★</td>
           <td class="stars">★★★★★</td>
         </tr>
+
+        <tr> 
+          {% assign jeux_1 = site.posts | where: "etoile", "★" %}
+           {% assign jeux_2 = site.posts | where: "etoile", "★★" %}
+           {% assign jeux_3 = site.posts | where: "etoile", "★★★" %}
+           {% assign jeux_4 = site.posts | where: "etoile", "★★★★" %}
+           {% assign jeux_5 = site.posts | where: "etoile", "★★★★★" %}
+           <td>
+            <p> {% for jeu in jeux_1 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
+          </td>
+          <td>
+            <p> {% for jeu in jeux_2 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
+          </td>
+          <td>
+            <p> {% for jeu in jeux_3 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
+          </td>
+          <td>
+            <p> {% for jeu in jeux_4 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
+          </td>
+          <td>
+            <p> {% for jeu in jeux_5 %} {{ jeu.title }}{% unless forloop.last %}<br>{% endunless %} {% endfor %} </p>
+          </td>
+        </tr>
+
+        <!--
         <tr>
           <td>
             <p>Bézette<br>Course à l'oeuf<br>Dis-moi-tout<br>Mémo sonore<br>Grand Mikado<br>Mikado géant<br>Mikado
@@ -96,6 +121,8 @@ title: Les jeux de bilboquet en vadrouille - animation et jeux en correze et lim
             <p>Grenouille</p>
           </td>
         </tr>
+        -->
+
         <tr>
           <td>
             <p>Prix location : <br>5€/j</p>
